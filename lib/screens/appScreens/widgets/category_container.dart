@@ -6,14 +6,12 @@ class CategoryContainer extends StatelessWidget {
   final String title;
   final int index;
   final VoidCallback onDelete, onUpdate;
-  final String tasksCompletd;
   const CategoryContainer({
     super.key,
     required this.onDelete,
     required this.onUpdate,
     required this.title,
     required this.index,
-    required this.tasksCompletd,
   });
 
   @override

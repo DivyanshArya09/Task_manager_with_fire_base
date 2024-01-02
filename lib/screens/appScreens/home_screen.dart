@@ -25,7 +25,6 @@ class _AppScreenState extends State<AppScreen> {
   int count = 0;
   @override
   void initState() {
-    // TODO: implement initState
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final myProvider = Provider.of<FireStoreServices>(context, listen: false);
       myProvider.getCategories();
@@ -306,7 +305,6 @@ class _AppScreenState extends State<AppScreen> {
                                         );
                                       },
                                       child: CategoryContainer(
-                                        tasksCompletd: value.,
                                         onDelete: () async {
                                           // Navigator.pop(context);
                                           showDialog(
